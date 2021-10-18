@@ -59,10 +59,12 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #eee;
+  --bs-body-color: #eeeeee;
   --bs-body-bg: #333;
   --bs-card-color:#222;
   --bs-card-bg: #212529;
+  --bs-navbar-bg: #212529;
+  --bs-navbar-color:#eeeeee;
 }
 
 *,
@@ -4047,6 +4049,8 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background: var(--bs-navbar-bg);
+  color: var(--bs-navbar-color);
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4529,6 +4533,7 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  box-shadow:  0 0 13px rgba(0,0,0,0.2);
 }
 .card > hr {
   margin-right: 0;
@@ -11687,4 +11692,19 @@ body {
   width: 20px !important;
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
+}
+
+/* Custom Changes */
+.avatar{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-md{
+min-width:2rem;
+height: 2rem;
+}
+.bg-green{
+  background: var(--bs-green);
 }
